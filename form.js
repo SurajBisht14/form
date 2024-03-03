@@ -42,12 +42,12 @@ async function fetchingData(){
     else{
         pokemonName.value=this.value;
         searchingPokemon = this.value;
+        searchingPokemon = searchingPokemon.toLowercase();
     }
  })    
                            
                             //SEARCHING THE POKEMON AFTER CLICKING THE BUTTON
 function searchButton(){
-    console.log("claled")
     if (arrayOfPokemon.includes(searchingPokemon) && arrayOfPokemon.includes(inputPokemon.value)){
         document.querySelector(".containerOfInfo1").style.opacity = "0";
         document.querySelector(".containerOfInfo").style.opacity = "1";
