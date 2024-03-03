@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(30, 27, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 75%;
+    width:400px;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    height: 60%;
+    width: 100%;
+    border: 1px solid white;
+    overflow: hidden;
+    background-color: white;
+}
+.searchPokemon{
+    height: 8%;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchPokemon input{
+    height: 100%;
+    width: 70%;
+    border-radius: .3rem;
+    font-size: 1rem;
+    color: gray;
+    outline: none;
+    transition: all .5s linear;
+}
+.searchPokemon button{
+    height: 100%;
+    width: 15%;
+    background-color: rgb(228, 107, 8);
+    border-radius: .3rem;
+    cursor: pointer;
+    border: 3px solid transparent;
+    color: white;
+    font-size: 1rem;
+}
+.searchPokemon button:hover{
+    border: 3px solid white;
+}
+.info{
+    height: 32%;
+    width: 100%;
+    background-color: rgb(206, 224, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: auto;
+    border-radius: .5rem;
+    position: relative;
+}
+.containerOfInfo1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: black;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition:all .3s linear;
+}
+.containerOfInfo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    justify-content:center;
+    padding-left: 30%;
+    transition:all .3s linear;
+    opacity: 0;
+}
+#pokemonName{
+    width: 30%;
+    height: 100%;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+#pokemonName option{
+    cursor:  pointer;
+}
